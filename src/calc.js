@@ -8,7 +8,8 @@ function getCalcAnswer(a, b, operation) {
     case '+': return a + b
     case '-': return a - b
     case '*': return a * b
-    default: null
+    default:
+      throw new Error(`Unknown operation: ${operation}`)
   }
 }
 
